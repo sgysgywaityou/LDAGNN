@@ -1,0 +1,24 @@
+# dataset config
+raw_dataset: D:/我的大学/项目/文本分类模型构建/data/THUCNews/
+data_root: ../data/THUCNews/
+num_per_class: 50
+ratio: 0.8
+stop_path: ../data/hit_stopwords.txt
+train_path: ../data/THUCNews/train/
+test_path: ../data/THUCNews/test/
+corpus_path: ../data/THUCNews/corpus/
+train_data:
+  data_file: train_corpus.txt
+  label_file: train_label.txt
+word2idx_file: word_index.pkl
+bert_path: ../model/chinese_wwm_ext_pytorch/
+degree:
+  degree_file: degree.train.adj
+  degree_w_label_file: degree_edge_w-l.train.adj
+  degree_d_label_file: degree_edge_d-l.train.adj
+  degree_w_d_label_file: degree_edge_w-d-l.train.adj
+vecs:
+  word_vecs_file: word_vec_matrix.pkl
+  doc_vecs_file: doc_vec_matrix.pkl
+  label_vecs_file: label_vec_matrix.pkl
+window_size: 20
